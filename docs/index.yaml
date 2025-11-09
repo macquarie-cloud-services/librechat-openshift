@@ -14,11 +14,11 @@ entries:
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
-      repository: https://charts.bitnami.com/bitnami
+      repository: oci://registry-1.docker.io/bitnamicharts
       version: 15.5.38
     - condition: mongodb.enabled
       name: mongodb
-      repository: https://charts.bitnami.com/bitnami
+      repository: oci://registry-1.docker.io/bitnamicharts
       version: 16.5.45
     - condition: ollama.enabled
       name: ollama
@@ -59,8 +59,8 @@ entries:
     - https://github.com/maximilianoPizarro/librechat
     type: application
     urls:
-    - librechat-1.8.14.tgz
-    version: 1.8.14
+    - librechat-1.9.0.tgz
+    version: 1.9.0
   - annotations:
       charts.openshift.io/name: LibreChat
     apiVersion: v2
