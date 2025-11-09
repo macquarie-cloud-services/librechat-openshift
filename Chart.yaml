@@ -4,11 +4,11 @@ kubeVersion: ">=1.20.0"
 dependencies:
   - condition: postgresql.enabled
     name: postgresql
-    repository: https://charts.bitnami.com/bitnami
+    repository: oci://registry-1.docker.io/bitnamicharts
     version: 15.5.38
   - name: mongodb
     version: 16.5.45
-    repository: https://charts.bitnami.com/bitnami
+    repository: oci://registry-1.docker.io/bitnamicharts
     condition: mongodb.enabled
   - name: ollama
     version: 1.26.0
